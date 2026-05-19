@@ -29,4 +29,17 @@ public enum Role {
 
     Role(String label) { this.label = label; }
 
+     public String getLabel() { return label; }
+
+    /**
+     * Returns the Role that corresponds to a 1‑based index.
+     * Used when the user picks from a numbered list.
+     */
+    public static Role fromIndex(int index) {
+        Role[] values = values();
+        if (index >= 1 && index <= values.length) {
+            return values[index - 1];
+        }
+        return null;
+    }
 }
