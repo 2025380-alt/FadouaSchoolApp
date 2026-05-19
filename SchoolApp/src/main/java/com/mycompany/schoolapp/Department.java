@@ -4,10 +4,9 @@
  */
 package com.mycompany.schoolapp;
 
+
 /**
- *
- * @author store one
+ * Enum representing academic or administrative departments in a school.
+ * Used when adding a person to assign them to a department.
  */
-public class Department {
-    
-}
+public enum Department {
