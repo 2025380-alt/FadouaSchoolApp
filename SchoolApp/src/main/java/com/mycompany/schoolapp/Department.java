@@ -21,5 +21,11 @@ public enum Department {
     MUSIC("Music"),
     FOREIGN_LANGUAGES("Foreign Languages"),
     SPECIAL_EDUCATION("Special Education");
+    
+    private final String name;
+
+    Department(String name) { this.name = name; }
+
+    public String getName() { return name; }
 
 }
