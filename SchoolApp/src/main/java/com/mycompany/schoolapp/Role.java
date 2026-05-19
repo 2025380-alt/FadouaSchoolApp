@@ -13,3 +13,14 @@ package com.mycompany.schoolapp;
  * Used for display and user selection when adding a new record.
  */
 public enum Role {
+    PRINCIPAL("Principal"),
+    VICE_PRINCIPAL("Vice Principal"),
+    HEAD_OF_DEPARTMENT("Head of Department"),
+    TEACHER("Teacher"),
+    ASSISTANT_TEACHER("Assistant Teacher"),
+    SUBSTITUTE_TEACHER("Substitute Teacher"),
+    COUNSELOR("Counselor"),
+    LIBRARIAN("Librarian"),
+    ADMIN("Administrative Staff"),
+    INTERN("Intern");
+}
