@@ -27,5 +27,15 @@ public enum Department {
     Department(String name) { this.name = name; }
 
     public String getName() { return name; }
+    
+        /** Returns Department from a 1‑based index (user selection). */
+    public static Department fromIndex(int index) {
+        Department[] values = values();
+        if (index >= 1 && index <= values.length) {
+            return values[index - 1];
+        }
+        return null;
+    }
+
 
 }
