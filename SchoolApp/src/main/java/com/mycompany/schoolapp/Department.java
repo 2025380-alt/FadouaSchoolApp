@@ -10,3 +10,16 @@ package com.mycompany.schoolapp;
  * Used when adding a person to assign them to a department.
  */
 public enum Department {
+    
+    MATHEMATICS("Mathematics"),
+    SCIENCE("Science"),
+    ENGLISH("English"),
+    HISTORY("History"),
+    COMPUTER_SCIENCE("Computer Science"),
+    PHYSICAL_EDUCATION("Physical Education"),
+    ART("Art"),
+    MUSIC("Music"),
+    FOREIGN_LANGUAGES("Foreign Languages"),
+    SPECIAL_EDUCATION("Special Education");
+
+}
