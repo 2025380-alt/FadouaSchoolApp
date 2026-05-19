@@ -42,4 +42,12 @@ public enum Role {
         }
         return null;
     }
+    
+        /** Displays all roles with numbers so the user can choose. */
+    public static void displayOptions() {
+        Role[] values = values();
+        for (int i = 0; i < values.length; i++) {
+            System.out.println((i + 1) + ". " + values[i].label);
+        }
+    }
 }
