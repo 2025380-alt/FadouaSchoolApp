@@ -26,5 +26,20 @@ public enum MenuOption {
     /** Returns the numeric code of this menu option. */
     public int getOption() { return option; }
 
-    
+       /**
+     * Returns the MenuOption corresponding to an integer choice.
+     * @param choice integer entered by user
+     * @return matching MenuOption or null if none found
+     */
+    public static MenuOption fromInt(int choice) {
+        for (MenuOption m : values()) {
+            if (m.option == choice) return m;
+        }
+        return null;
+    }
+
+    @Override
+    public String toString() {
+        return option + ". " + description;
+    }
 }
