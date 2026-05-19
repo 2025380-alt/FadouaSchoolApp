@@ -36,6 +36,12 @@ public enum Department {
         }
         return null;
     }
-
+    /** Displays departments as a numbered list. */
+    public static void displayOptions() {
+        Department[] values = values();
+        for (int i = 0; i < values.length; i++) {
+            System.out.println((i + 1) + ". " + values[i].name);
+        }
+    }
 
 }
