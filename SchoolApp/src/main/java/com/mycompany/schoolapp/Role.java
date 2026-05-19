@@ -23,4 +23,10 @@ public enum Role {
     LIBRARIAN("Librarian"),
     ADMIN("Administrative Staff"),
     INTERN("Intern");
+    
+    
+    private final String label;   // user‑friendly name
+
+    Role(String label) { this.label = label; }
+
 }
