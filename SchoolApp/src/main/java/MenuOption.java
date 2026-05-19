@@ -7,6 +7,4 @@
  *
  * @author store one
  */
-public class MenuOption {
-    
-}
+public enum MenuOption {
