@@ -17,7 +17,7 @@ public enum MenuOption {
 
     private final int option;          // numeric code for menu selection
     private final String description;   // human‑readable description
-
+//add option/description fields and constructor
     MenuOption(int option, String description) {
         this.option = option;
         this.description = description;
