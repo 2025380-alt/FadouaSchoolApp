@@ -3,11 +3,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.schoolapp;
+import java.util.ArrayList;
 
 /**
  *
  * @author store one
  */
 public class PersonSorter {
+    
+     /**
+     * Recursively sorts the subarray list[left..right] (inclusive) using merge sort.
+     * @param list the ArrayList to sort (modified in place)
+     * @param left left index (inclusive)
+     * @param right right index (inclusive)
+     */
+    public static void mergeSort(ArrayList<Person> list, int left, int right) {
+       
     
 }
