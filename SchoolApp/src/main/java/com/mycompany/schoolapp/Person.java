@@ -45,5 +45,9 @@ public class Person {
         this.role = role;
         this.schoolName = schoolName;
     }
+     /** Returns "FirstName LastName". Used for sorting and searching. */
+    public String getFullName() {
+        return firstName + " " + lastName;
+    }
     }
 }
