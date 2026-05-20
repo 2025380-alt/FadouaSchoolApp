@@ -22,6 +22,8 @@ public class PersonSearcher {
                                    int low, int high) {
         
          if (low > high) return -1;                     // base case: not found
+         int mid = low + (high - low) / 2;              // prevent overflow
+         int cmp = list.get(mid).getFullName().compareToIgnoreCase(fullName);
     }
     
 }
