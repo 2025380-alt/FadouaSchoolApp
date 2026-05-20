@@ -24,5 +24,14 @@ public class Person {
     private String department;
     private String position;         // e.g., senior, middle, intern – may be empty
     private String role;             // Principal, Teacher, etc. (from Role enum)
+    private String schoolName;
     
+    
+    /**
+     * Full constructor.
+     * @param position may be an empty string, which will be stored as null
+     */
+    public Person(String firstName, String lastName, String gender, String email,
+                  double salary, String department, String position, String role,
+                  String schoolName) {
 }
