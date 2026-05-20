@@ -51,6 +51,18 @@ public class Person {
     }
     public String getRole() { return role; }
     public String getDepartment() { return department; }
-
+    
+    /**
+     * String representation used in menus and binary tree output.
+     * Format: First Last | Role | Department
+     */
+    @Override
+    public String toString() {
+        return String.format("%s %s | %s | %s",
+                firstName, lastName,
+                role.isEmpty() ? "(no role)" : role,
+                department.isEmpty() ? "(no department)" : department);
     }
 }
+
+    }
