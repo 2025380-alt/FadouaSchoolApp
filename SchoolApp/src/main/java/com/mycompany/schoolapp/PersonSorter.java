@@ -18,6 +18,10 @@ public class PersonSorter {
      * @param right right index (inclusive)
      */
     public static void mergeSort(ArrayList<Person> list, int left, int right) {
-       
+        int mid = left + (right - left) / 2;   // avoid overflow
+            mergeSort(list, left, mid);             // sort left half
+            mergeSort(list, mid + 1, right);       // sort right half
+            merge(list, left, mid, right);          // merge the two sorted halves
+        }
+    }
     
-}
