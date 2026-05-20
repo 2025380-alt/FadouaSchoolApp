@@ -25,3 +25,8 @@ public class PersonSorter {
         }
     }
     
+/**
+     * Merges two sorted subarrays: list[left..mid] and list[mid+1..right].
+     * Uses temporary ArrayLists for the two halves.
+     */
+    private static void merge(ArrayList<Person> list, int left, int mid, int right) {
