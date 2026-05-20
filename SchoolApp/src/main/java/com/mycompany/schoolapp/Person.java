@@ -34,4 +34,16 @@ public class Person {
     public Person(String firstName, String lastName, String gender, String email,
                   double salary, String department, String position, String role,
                   String schoolName) {
+        
+          this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
+        this.email = email;
+        this.salary = salary;
+        this.department = department;
+        this.position = position.isEmpty() ? null : position;
+        this.role = role;
+        this.schoolName = schoolName;
+    }
+    }
 }
