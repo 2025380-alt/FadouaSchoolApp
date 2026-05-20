@@ -49,5 +49,8 @@ public class Person {
     public String getFullName() {
         return firstName + " " + lastName;
     }
+    public String getRole() { return role; }
+    public String getDepartment() { return department; }
+
     }
 }
