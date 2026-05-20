@@ -20,5 +20,8 @@ public class PersonSearcher {
      */
     public static int binarySearch(ArrayList<Person> list, String fullName,
                                    int low, int high) {
+        
+         if (low > high) return -1;                     // base case: not found
+    }
     
 }
