@@ -87,3 +87,14 @@ public class BinaryTree {
             if (current.right != null) queue.add(current.right);
         }
     }
+    
+    /** Returns the height of the tree (number of nodes on the longest path from root to leaf). */
+    public int height() {
+        return calcHeight(root);
+    }
+
+    /** Recursive helper to compute height. */
+    private int calcHeight(TreeNode node) {
+        if (node == null) return 0;
+        return 1 + Math.max(calcHeight(node.left), calcHeight(node.right));
+    }
