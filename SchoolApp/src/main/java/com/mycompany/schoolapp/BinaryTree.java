@@ -51,5 +51,20 @@ public class BinaryTree {
         }
         root = buildRecursive(people, 0);
     }
+    
+      /**
+     * Recursively builds the tree using the index mapping.
+     * @param people the source list
+     * @param index current node's index in the array representation
+     * @return TreeNode for this index, or null if index out of bounds
+     */
+    private TreeNode buildRecursive(List<Person> people, int index) {
+        if (index >= people.size()) return null;
+        TreeNode node = new TreeNode(people.get(index));
+        node.left = buildRecursive(people, 2 * index + 1);
+        node.right = buildRecursive(people, 2 * index + 2);
+        return node;
+    }
+
     }
 
