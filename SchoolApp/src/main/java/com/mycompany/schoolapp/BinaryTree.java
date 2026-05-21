@@ -32,4 +32,15 @@ public class BinaryTree {
             this.person = person;
         }
     }
+    
+      /**
+     * Builds a complete binary tree from a list of Person objects.
+     * Uses recursive construction based on array indices:
+     * - root at index 0
+     * - left child at 2*index+1
+     * - right child at 2*index+2
+     *
+     * @param people list of persons (will be placed in level order)
+     */
+    public void buildFromList(List<Person> people) {
 }
