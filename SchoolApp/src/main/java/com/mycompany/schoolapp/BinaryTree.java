@@ -65,6 +65,25 @@ public class BinaryTree {
         node.right = buildRecursive(people, 2 * index + 2);
         return node;
     }
+ 
 
+    /**
+     * Prints the tree in level order (breadth‑first) using a queue.
+     * Each node is displayed as: FullName | Role | Department
+     */
+    public void levelOrderTraversal() {
+        if (root == null) {
+            System.out.println("Tree is empty.");
+            return;
+        }
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            TreeNode current = queue.poll();
+            System.out.println(current.person.getFullName() + " | " +
+                    current.person.getRole() + " | " +
+                    current.person.getDepartment());
+            if (current.left != null) queue.add(current.left);
+            if (current.right != null) queue.add(current.right);
+        }
     }
-
