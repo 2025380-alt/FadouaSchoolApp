@@ -98,3 +98,9 @@ public class BinaryTree {
         if (node == null) return 0;
         return 1 + Math.max(calcHeight(node.left), calcHeight(node.right));
     }
+    
+   /** Returns total number of nodes in the tree. */
+    public int totalNodes() {
+        return nodeCount;
+    }
+}
