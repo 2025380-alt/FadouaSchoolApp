@@ -43,4 +43,13 @@ public class BinaryTree {
      * @param people list of persons (will be placed in level order)
      */
     public void buildFromList(List<Person> people) {
-}
+        
+        nodeCount = people.size();
+        if (people.isEmpty()) {
+            root = null;
+            return;
+        }
+        root = buildRecursive(people, 0);
+    }
+    }
+
